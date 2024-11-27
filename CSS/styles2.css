@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    background-color: #f8f9fa; /* Subtle background color */
+    min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should expand to fill space */
+main {
+    flex: 1; /* Ensures the main content takes up available space */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Page-Specific Customization */
+#welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#welcome p {
+    font-size: 1.2em;
+}
+
+#highlights .concert-card {
+    border: 1px solid #ccc;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0;
+    background-color: #343a40; /* Dark navbar background */
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin-right: 15px; /* Menambah ruang antara setiap item nav */
+}
+
+.navbar .navbar-nav {
+    margin-left: auto; /* Letakkan navbar ke kanan */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #00d1b2 !important; /* Light teal color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* General Button Styles */
+.btn {
+    padding: 12px 30px; /* Larger padding for better click area */
+    font-size: 18px; /* Larger font size for better readability */
+    border-radius: 30px; /* Rounded corners for a modern look */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Align the button properly */
+    text-align: center; /* Ensure text is centered */
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: 2px solid #4CAF50; /* Border to match background */
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border-color: #45a049; /* Darker border color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn-secondary {
+    background-color: #45a049; /* Blue background */
+    color: white; /* White text */
+    border: 2px solid #007bff; /* Border to match background */
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker border color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow on focus */
+}
+
+.form-control:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Card Styling for Highlights Section */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    border: none; /* Remove default border for cleaner look */
+    border-radius: 15px; /* Rounded corners for a more modern appearance */
+    overflow: hidden; /* Ensure content inside the card doesn't overflow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Default soft shadow for card */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card up on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover to enhance the lift effect */
+}
+
+/* Optional: Add a little hover effect on the card image */
+.card img {
+    transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Slight zoom effect on image */
+}
+
+.container {
+    flex: 1; /* Allows container content to grow if needed */
+}
+
+.content-box {
+    background-color: #f9f9f9; /* Light background for the box */
+    border: 1px solid #ccc; /* Light border around the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Optional styling for text and spacing */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p.lead {
+    font-size: 1.25rem; /* Increase font size for the lead */
+    font-family: 'Poppins', sans-serif;
+}
+
+.refund-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+.status-card {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Responsive button styling */
+@media (max-width: 576px) {
+    .btn {
+        padding: 10px 20px; /* Adjust padding on smaller screens */
+        font-size: 16px; /* Adjust font size on smaller screens */
+    }
+}

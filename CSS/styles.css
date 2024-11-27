@@ -1,0 +1,243 @@
+/* General Font Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Clean and modern font */
+    margin: 0; 
+    /* background: linear-gradient(to bottom right, #f8f9fa, #e9ecef); /* Subtle gradient background */
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: #343a40; /* Gradient for a more vibrant look */
+    padding: 15px;
+    z-index: 1050;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #1cc88a; /* Soft off-white on hover */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* White icon color */
+    width: 30px;  /* Set the width to a specific size */
+    height: 20px; /* Set the height to a specific size */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E"); /* Custom SVG path for the icon */
+}
+
+.navbar-toggler-icon {
+    background-color: #adb1b4; /* Change to any color you like */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    min-height: 140vh;  /* Minimum height to cover the full viewport */
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding-top: 20px;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px 20px; /* Increase padding for more space */
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #1cc88a; /* Greenish hover effect */
+    color: white;
+    transform: translateX(10px); /* Smooth sliding effect */
+}
+
+/* Main Content Styling */
+.content {
+    margin-left: 250px;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 8px;
+    /*box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow to content area */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add more shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px; /* Larger font for the heading */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #343a40; /* Underline the header */
+    padding-bottom: 10px;
+}
+
+.p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form Inputs */
+.form-group input,
+.form-group textarea {
+    border-radius: 8px; /* Round corners for inputs */
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1cc88a; /* Highlight inputs with green when focused */
+    box-shadow: 0 0 5px rgba(28, 200, 138, 0.5); /* Add soft shadow */
+}
+
+/* Button Styling */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 50px; /* Rounded corners for buttons */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: scale(1.05); /* Slight enlargement effect */
+}
+
+/* Button Secondary */
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 50px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    transform: scale(1.05); /* Slight enlargement effect */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Table Rows */
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Table Hover Effects */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01); /* Subtle zoom effect */
+    transition: transform 0.3s ease;
+}
+
+/* Action Buttons inside Table */
+.table .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.table .btn-warning {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.table .btn-warning:hover {
+    background-color: #ec971f;
+}
+
+.table .btn-danger {
+    background-color: #d9534f;
+    border-color: #c9302c;
+}
+
+.table .btn-danger:hover {
+    background-color: #c9302c;
+}
+
+
+/* Responsive Styling */
+
+/* For very small devices like phones in portrait mode */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 16px; /* Adjust font size of navbar links */
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar on small screens */
+        position: relative;
+        height: auto;
+        top: 0;
+        padding: 10px;
+    }
+
+    .content {
+        margin-left: 0; /* No left margin for small screens */
+        padding: 15px; /* Reduced padding */
+    }
+
+    .table th, .table td {
+        font-size: 14px; /* Smaller font size for table */
+        padding: 8px; /* Reduced padding */
+    }
+
+    .btn-success, .btn-secondary {
+        font-size: 14px; /* Smaller button font */
+        padding: 8px 16px; /* Smaller button padding */
+    }
+
+    /* Stack table rows and make buttons smaller */
+    .table .btn {
+        width: auto;
+    }
+}
