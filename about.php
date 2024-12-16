@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +27,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="concerts.html">Concerts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html">Login/Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.php">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="concerts.php">Concerts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.php">Login/Register</a></li>
                 </ul>
             </div>
         </div>

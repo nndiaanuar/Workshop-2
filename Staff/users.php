@@ -1,3 +1,7 @@
+<?php
+include '../database/Connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,26 +55,33 @@
             <thead class="table-dark">
                 <tr>
                     <th>No.</th>
-                    <th>Full Name</th>
+                    <th>Name</th>
+                    <th>PhoneNo</th>
                     <th>Email</th>
-                    <th>Registration Date</th>
+                    <th>Bank</th>
+                    <th>Account Number</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Example Data -->
-                <tr>
-                    <td>1</td>
-                    <td>John Doe</td>
-                    <td>john@example.com</td>
-                    <td>2024-10-15</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jane Smith</td>
-                    <td>jane@example.com</td>
-                    <td>2024-10-20</td>
-                </tr>
-                <!-- Add More Rows as Needed -->
+            <?php
+                $result = pg_query($connection, "SELECT * FROM customer");
+                if (!$result) {
+                    echo "An error occured.<br>";
+                    exit;
+                }
+            
+                while($row = pg_fetch_assoc($result)) {
+                    echo "
+                    <tr>
+                        <td>$row[customer_id]</td>
+                        <td>$row[name]</td>
+                        <td>$row[phoneno]</td>
+                        <td>$row[email]</td>
+                        <td>$row[bank]</td>
+                        <td>$row[accno]</td>
+                    </tr>";
+                }
+                ?>
             </tbody>
         </table>
     </div>

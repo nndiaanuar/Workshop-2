@@ -14,7 +14,7 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../index.php">
         <img src="../Images/logo.png" alt="Concert Logo" style="height: 40px; margin-right: 10px;">
         <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 24px;">Concert Ticketing</span>
     </a>
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Logout</a>
+                <a class="nav-link" href="../index.php">Logout</a>
             </li>
         </ul>
     </div>
@@ -33,13 +33,13 @@
 
 <!-- Sidebar for Staff Navigation -->
 <div class="sidebar">
-    <a href="Dashboard.html" class="sidebar-link">Dashboard</a>
-    <a href="users.html" class="sidebar-link">Users</a>
-    <a href="usersfeedback.html" class="sidebar-link">Users Feedback</a>
-    <a href="tickets-sold.html" class="sidebar-link">Ticket Sales</a>
-    <a href="ConcertManagament.html" class="sidebar-link">Concert Management</a>
-    <a href="VendorManagament.html" class="sidebar-link">Vendor Management</a>
-    <a href="SalesReport.html" class="sidebar-link">Sales & Reports</a>
+    <a href="Dashboard.php" class="sidebar-link">Dashboard</a>
+    <a href="users.php" class="sidebar-link">Users</a>
+    <a href="usersfeedback.php" class="sidebar-link">Users Feedback</a>
+    <a href="tickets-sold.php" class="sidebar-link">Ticket Sales</a>
+    <a href="ConcertManagament.php" class="sidebar-link">Concert Management</a>
+    <a href="VendorManagament.php" class="sidebar-link">Vendor Management</a>
+    <a href="SalesReport.php" class="sidebar-link">Sales & Reports</a>
 </div>
 
 <!-- Main Content Area -->

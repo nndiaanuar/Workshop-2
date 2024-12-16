@@ -12,3 +12,13 @@ Check if the sales meet the minimum requirement (300 tickets).
 Cancel the concert automatically if the sales are below the minimum.
 Trigger an automatic refund for all users who purchased tickets for that concert.
 This system would require integration with your ticket purchasing process and a refund mechanism that triggers when a concert is canceled due to low sales.
+
+CREATE TABLE customer (
+    customer_ID SERIAL PRIMARY KEY,                   -- Primary Key
+    name VARCHAR(50) NOT NULL,                     -- Name (Required)
+    phoneNo VARCHAR(10) NOT NULL UNIQUE,            -- Phone number (Required and unique)
+    email VARCHAR(50) NOT NULL UNIQUE,              -- Email (Required and unique)
+    bank VARCHAR(50) NOT NULL,                     -- Bank (Required)
+    accNo VARCHAR(16) NOT NULL                      -- Account Number (Required)
+);
+

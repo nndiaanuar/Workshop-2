@@ -13,7 +13,7 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../index.php">
         <img src="../Images/logo.png" alt="Concert Logo" style="height: 40px; margin-right: 10px;">
         <span style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 24px;">Concert Ticketing</span>
     </a>
@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Logout</a>
+                <a class="nav-link" href="../index.php">Logout</a>
             </li>
         </ul>
     </div>
@@ -32,13 +32,13 @@
 
 <!-- Sidebar for Staff Navigation -->
 <div class="sidebar">
-    <a href="Dashboard.html" class="sidebar-link">Dashboard</a>
-    <a href="users.html" class="sidebar-link">Users</a>
-    <a href="usersfeedback.html" class="sidebar-link">Users Feedback</a>
-    <a href="tickets-sold.html" class="sidebar-link">Ticket Sales</a>
-    <a href="ConcertManagament.html" class="sidebar-link">Concert Management</a>
-    <a href="VendorManagament.html" class="sidebar-link">Vendor Management</a>
-    <a href="SalesReport.html" class="sidebar-link">Sales & Reports</a>
+    <a href="Dashboard.php" class="sidebar-link">Dashboard</a>
+    <a href="users.php" class="sidebar-link">Users</a>
+    <a href="usersfeedback.php" class="sidebar-link">Users Feedback</a>
+    <a href="tickets-sold.php" class="sidebar-link">Ticket Sales</a>
+    <a href="ConcertManagament.php" class="sidebar-link">Concert Management</a>
+    <a href="VendorManagament.php" class="sidebar-link">Vendor Management</a>
+    <a href="SalesReport.php" class="sidebar-link">Sales & Reports</a>
 </div>
 
 <!-- Main Content Area -->
@@ -52,7 +52,7 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                         <h5 class="card-title mb-3" style="font-weight: bold;"><i class="fas fa-dollar-sign"></i> Total Sales</h5>
                         <p class="card-text" style="font-size: 1.5rem;">RM 30,000</p>
-                        <a href="SalesReport.html" class="btn btn-light btn-block">View Details</a>
+                        <a href="SalesReport.php" class="btn btn-light btn-block">View Details</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                         <h5 class="card-title mb-3" style="font-weight: bold;"><i class="fas fa-ticket-alt"></i> Ticket Sales</h5>
                         <p class="card-text" style="font-size: 1.5rem;">1000 Tickets Sold</p>
-                        <a href="tickets-sold.html" class="btn btn-light btn-block">View Details</a>
+                        <a href="tickets-sold.php" class="btn btn-light btn-block">View Details</a>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                         <h5 class="card-title mb-3" style="font-weight: bold;"><i class="fas fa-calendar-check"></i> Upcoming Concerts</h5>
                         <p class="card-text" style="font-size: 1.5rem;">5 Concerts Scheduled</p>
-                        <a href="ConcertManagament.html" class="btn btn-light btn-block">View Details</a>
+                        <a href="ConcertManagament.php" class="btn btn-light btn-block">View Details</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                         <h5 class="card-title mb-3" style="font-weight: bold;"><i class="fas fa-store"></i> Vendors</h5>
                         <p class="card-text" style="font-size: 1.5rem;">3 Active Vendors</p>
-                        <a href="VendorManagament.html" class="btn btn-light btn-block">View Details</a>
+                        <a href="VendorManagament.php" class="btn btn-light btn-block">View Details</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                         <h5 class="card-title mb-3" style="font-weight: bold;"><i class="fas fa-comment"></i> User Feedback</h5>
                         <p class="card-text" style="font-size: 1.5rem;">45 Feedbacks Received</p>
-                        <a href="usersfeedback.html" class="btn btn-light btn-block">View Details</a>
+                        <a href="usersfeedback.php" class="btn btn-light btn-block">View Details</a>
                     </div>
                 </div>
             </div>
